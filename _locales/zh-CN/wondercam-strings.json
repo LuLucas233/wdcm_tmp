@@ -26,12 +26,12 @@
     "wondercam.Functions.NumberRecognition|block": "数字识别",
     "wondercam.Functions.LandmarkRecognition|block": "路标识别",
 
-    "wondercam.Landmarks.NoLandmark|block": "未识别",
-    "wondercam.Landmarks.GoForward|block": "前进",
-    "wondercam.Landmarks.TurnLeft|block": "左转",
-    "wondercam.Landmarks.TurnRight|block": "右转",
-    "wondercam.Landmarks.TurnAbout|block": "调头",
-    "wondercam.Landmarks.Stop|block": "停止",
+    "wondercam.Landmarks.NoLandmark|block":"未识别",
+    "wondercam.Landmarks.GoForward|block":"前进",
+    "wondercam.Landmarks.TurnLeft|block":"左转",
+    "wondercam.Landmarks.TurnRight|block":"右转",
+    "wondercam.Landmarks.TurnAbout|block":"调头",
+    "wondercam.Landmarks.Stop|block":"停止",
 
     "wondercam.Objects.Aeroplane|block":"飞机",
     "wondercam.Objects.Bicycle|block":"自行车",

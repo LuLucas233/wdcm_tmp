@@ -31,8 +31,8 @@ namespace wondercam {
     }
 
     export enum Landmarks {
-        //% bock="No landmark"
-        NoLandmark = 0,
+        //% bock="NoLandmark"
+        NoLandmark,
         //% block="Go forward"
         GoForward = 1,
         //% block="Turn left"
