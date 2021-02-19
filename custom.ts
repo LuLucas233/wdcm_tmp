@@ -30,6 +30,21 @@ namespace wondercam {
         LandmarkRecognition,
     }
 
+    export enum Landmarks {
+        //% bock="None"
+        None = 0,
+        //% block="Go forward"
+        GoForward = 1,
+        //% block="Turn left"
+        TurnLeft = 2,
+        //% block="Turn right"
+        TurnRight = 3,
+        //% block="Turn About"
+        TurnAbout = 4,
+        //% block="Stop"
+        Stop = 5,
+    }
+
     export enum Objects {
         //% block="Aeroplane"
         Aeroplane = 1,
@@ -659,6 +674,51 @@ namespace wondercam {
             return (c / 10000.0)
         }
         return 0
+    }
+
+    //路标识别
+    /**
+     * TODO: 获取置信度最大的路标
+     */
+    //% weight=82 blockId=LandmarkWithMaxConfidence block="The most confident Number"
+    //% subcategory="Landmark recognition"
+    export function LandmarkWithMaxConfidence(): Landmarks {
+        if (Current == Functions.LandmarkRecognition) {
+            return ResultBuf.getNumber(NumberFormat.UInt8LE, 0x01);
+        }
+        return 0
+    }
+
+    /**
+     * TODO: 获取路标识别最大的置信度
+     */
+    //% weight=81 blockId=MaxConfidenceOfLandmark block="The most confident"
+    //% subcategory="Landmark recognition"
+    export function MaxConfidenceOfLandmark(): number {
+        if (Current == Functions.LandmarkRecognition) {
+            let c = ResultBuf.getNumber(NumberFormat.UInt16LE, 0x02);
+            return (c / 10000.0)
+        }
+        return 0
+    }
+
+    /**
+     * TODO: 获取指路标的的置信度
+     */
+    //% weight=80 blockId=ConfidenceOfLandmark block="Confident of Number:$id"
+    //% id.defl=1 id.min=1 id.max=5
+    //% subcategory="Landmark recognition"
+    export function ConfidenceOfLandmark(id: Landmarks): number {
+        if (Current == Functions.LandmarkRecognition) {
+            let c = ResultBuf.getNumber(NumberFormat.UInt16LE, 0x10 + ((id - 1) * 4))
+            return (c / 10000.0)
+        }
+        return 0
+    }
+    //% weight=60 blockId=GetLandmarkObj block="$id"
+    //% subcategory="Landmark recognition"
+    export function LandmarkObj(in_: Landmarks): Landmarks {
+        return in_
     }
 
     //特征学习

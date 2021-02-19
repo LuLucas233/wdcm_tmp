@@ -26,6 +26,13 @@
     "wondercam.Functions.NumberRecognition|block": "数字识别",
     "wondercam.Functions.LandmarkRecognition|block": "路标识别",
 
+    "wondercam.Landmarks.None|block": "无",
+    "wondercam.Landmarks.GoForward|block": "前进",
+    "wondercam.Landmarks.TurnLeft|block": "左转",
+    "wondercam.Landmarks.TurnRight|block": "右转",
+    "wondercam.Landmarks.TurnAbout|block": "调头",
+    "wondercam.Landmarks.Stop|block": "停止",
+
     "wondercam.Objects.Aeroplane|block":"飞机",
     "wondercam.Objects.Bicycle|block":"自行车",
     "wondercam.Objects.Bird|block":"鸟",
@@ -110,6 +117,10 @@
     "wondercam.NumberWithMaxConfidence|block":"数字识别 置信度最大的数字",
     "wondercam.MaxConfidenceOfNumber|block":"数字识别 最大置信度",
     "wondercam.ConfidenceOfNumber|block":"数字识别 数字:|$id|的置信度",
+
+    "wondercam.LandmarkWithMaxConfidence|block":"路标识别 置信度最大的路标",
+    "wondercam.MaxConfidenceOfLandmark|block":"路标识别 最大置信度",
+    "wondercam.ConfidenceOfLandmark|block":"路标识别 数字:|$id|的置信度",
 
     "wondercam.FlMaxConfidenceID|block":"特征学习 置信度最大的ID",
     "wondercam.FlMaxConfidence|block":"特征学习 最大置信度",
