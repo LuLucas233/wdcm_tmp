@@ -22,6 +22,7 @@
     "wondercam.Functions.LineFollowing|block":"视觉巡线",
     "wondercam.Functions.QrcodeScan|block":"二维码扫描",
     "wondercam.Functions.BarcodeScan|block":"条形码扫描",
+    "wondercam.Functions.AprilTag|block": "标签识别",
     "wondercam.Functions.NumberRecognition|block": "数字识别",
     "wondercam.Functions.LandmarkRecognition|block": "路标识别",
 

@@ -27,7 +27,7 @@ namespace wondercam {
         //% block="Number Recognition"
         NumberRecognition,
         //% block="Landmark Recognition"
-        LandMarkRecognition,
+        LandmarkRecognition,
     }
 
     export enum Objects {
@@ -316,7 +316,7 @@ namespace wondercam {
                 ResultBuf = i2creadtobuf(0x0D00, 128)
                 Current = Functions.Classification
                 break;
-            case Functions.LandMarkRecognition: //图像分类 结果地址
+            case Functions.LandmarkRecognition: //图像分类 结果地址
                 ResultBuf = i2creadtobuf(0x0D80, 128)
                 Current = Functions.Classification
                 break;
@@ -654,7 +654,7 @@ namespace wondercam {
     //% id.defl=1 id.min=1 id.max=5
     //% subcategory="Number recognition"
     export function ConfidenceOfNumber(id: number): number {
-        if (Current == Functions.Classification) {
+        if (Current == Functions.NumberRecognition) {
             let c = ResultBuf.getNumber(NumberFormat.UInt16LE, 0x10 + ((id - 1) * 4))
             return (c / 10000.0)
         }
