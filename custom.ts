@@ -314,11 +314,11 @@ namespace wondercam {
                 break;
             case Functions.NumberRecognition: //图像分类 结果地址
                 ResultBuf = i2creadtobuf(0x0D00, 128)
-                Current = Functions.Classification
+                Current = Functions.NumberRecognition
                 break;
             case Functions.LandmarkRecognition: //图像分类 结果地址
                 ResultBuf = i2creadtobuf(0x0D80, 128)
-                Current = Functions.Classification
+                Current = Functions.LandmarkRecognition
                 break;
             case Functions.FeatureLearning:  //特征学习 结果地址
                 ResultBuf = i2creadtobuf(0x0E00, 128)
