@@ -1,4 +1,5 @@
 {
+    "{id:category}WonderCam": "小幻熊AI视觉模块",
     "{id:subcategory}Facial recognition":"人脸识别",
     "{id:subcategory}Object detection":"物品识别",
     "{id:subcategory}Classification":"图像分类",
