@@ -32,7 +32,7 @@ namespace wondercam {
 
     export enum Landmarks {
         //% bock="None"
-        None = 0,
+        None_ = 0,
         //% block="Go forward"
         GoForward = 1,
         //% block="Turn left"
@@ -223,8 +223,8 @@ namespace wondercam {
      */
     //% weight=180
     //% block="Initialize WonderCam at |$dev_addr|"
-    //% dev_addr.defl=DEV_ADDR.x32
-    export function wondercam_init(dev_addr: DEV_ADDR = DEV_ADDR.x32): void {
+    //% dev_addr.defl=0x32
+    export function wondercam_init(dev_addr: DEV_ADDR): void {
         WONDERCAM_I2C_ADDR = dev_addr
         while (i2creadnum(0) != 'v'.charCodeAt(0)) {
             basic.showString("E")

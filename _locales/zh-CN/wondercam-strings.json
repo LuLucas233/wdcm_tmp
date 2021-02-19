@@ -26,7 +26,7 @@
     "wondercam.Functions.NumberRecognition|block": "数字识别",
     "wondercam.Functions.LandmarkRecognition|block": "路标识别",
 
-    "wondercam.Landmarks.None|block": "无",
+    "wondercam.Landmarks.None_|block": "无",
     "wondercam.Landmarks.GoForward|block": "前进",
     "wondercam.Landmarks.TurnLeft|block": "左转",
     "wondercam.Landmarks.TurnRight|block": "右转",
