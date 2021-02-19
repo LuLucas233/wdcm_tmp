@@ -715,7 +715,7 @@ namespace wondercam {
         }
         return 0
     }
-    //% weight=60 blockId=GetLandmarkObj block="|$id_|"
+    //% weight=60 blockId=GetLandmarkObj block="|$in_|"
     //% subcategory="Landmark recognition"
     export function LandmarkObj(in_: Landmarks): Landmarks {
         return in_
