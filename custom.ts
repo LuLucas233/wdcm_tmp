@@ -31,8 +31,8 @@ namespace wondercam {
     }
 
     export enum Landmarks {
-        //% bock="None"
-        None = 0,
+        //% bock="No landmark"
+        NoLandmark = 0,
         //% block="Go forward"
         GoForward = 1,
         //% block="Turn left"
@@ -158,6 +158,8 @@ namespace wondercam {
     }
 
     export enum DEV_ADDR {
+        //% block="0x32"
+        x32 = 0x32,
         //% block="0x21"
         x21 = 0x21,
         //% block="0x22"
@@ -168,8 +170,6 @@ namespace wondercam {
         x24 = 0x24,
         //% block="0x31"
         x31 = 0x31,
-        //% block="0x32"
-        x32 = 0x32,
         //% block="0x33"
         x33 = 0x33,
         //% block="0x34"
