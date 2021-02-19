@@ -120,7 +120,7 @@
 
     "wondercam.LandmarkWithMaxConfidence|block":"路标识别 置信度最大的路标",
     "wondercam.MaxConfidenceOfLandmark|block":"路标识别 最大置信度",
-    "wondercam.ConfidenceOfLandmark|block":"路标识别 数字:|$id|的置信度",
+    "wondercam.ConfidenceOfLandmark|block":"路标识别 路标:|$id|的置信度",
 
     "wondercam.FlMaxConfidenceID|block":"特征学习 置信度最大的ID",
     "wondercam.FlMaxConfidence|block":"特征学习 最大置信度",
