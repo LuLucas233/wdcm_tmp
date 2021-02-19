@@ -1,6 +1,6 @@
 {
     "{id:subcategory}Facial recognition":"人脸识别",
-    "{id:subcategory}Object detection":"物品识别", 
+    "{id:subcategory}Object detection":"物品识别",
     "{id:subcategory}Classification":"图像分类",
     "{id:subcategory}FeatureLearning":"特征学习",
     "{id:subcategory}Color detection":"颜色识别",
@@ -8,7 +8,10 @@
     "{id:subcategory}AprilTag": "标签识别",
     "{id:subcategory}QRcode scanning":"二维码识别",
     "{id:subcategory}Barcode scanning":"条形码识别",
-    
+    "{id:subcategory}Number recognition":"数字识别",
+    "{id:subcategory}Landmark recognition":"路标识别",
+
+
     "wondercam.Functions.NoFunction|block":"无功能",
     "wondercam.Functions.FaceDetect|block":"人脸识别",
     "wondercam.Functions.ObjectDetect|block":"物品识别",
@@ -18,7 +21,9 @@
     "wondercam.Functions.LineFollowing|block":"视觉巡线",
     "wondercam.Functions.QrcodeScan|block":"二维码扫描",
     "wondercam.Functions.BarcodeScan|block":"条形码扫描",
-    
+    "wondercam.Functions.NumberRecognition|block": "数字识别",
+    "wondercam.Functions.LandmarkRecognition|block": "路标识别",
+
     "wondercam.Objects.Aeroplane|block":"飞机",
     "wondercam.Objects.Bicycle|block":"自行车",
     "wondercam.Objects.Bird|block":"鸟",
@@ -99,6 +104,10 @@
     "wondercam.MaxConfidenceID|block":"图像分类 置信度最大的ID",
     "wondercam.MaxConfidence|block":"图像分类 最大置信度",
     "wondercam.ConfidenceOfIdClassification|block":"图像分类 ID:|$id|的置信度",
+
+    "wondercam.NumberWithMaxConfidence|block":"数字识别 置信度最大的数字",
+    "wondercam.MaxConfidenceOfNumber|block":"数字识别 最大置信度",
+    "wondercam.ConfidenceOfNumber|block":"数字识别 数字:|$id|的置信度",
 
     "wondercam.FlMaxConfidenceID|block":"特征学习 置信度最大的ID",
     "wondercam.FlMaxConfidence|block":"特征学习 最大置信度",
